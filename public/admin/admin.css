@@ -1,0 +1,17 @@
+:root { --bg:#0e0e1a; --card:#16162b; --text:#e8e8ff; --muted:#9aa; --accent:#7df9ff; --danger:#ff6682; }
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,Segoe UI,Roboto}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:#12122b;border-bottom:1px solid #222}
+.brand{font-weight:700;color:var(--accent)}
+nav a, nav span{margin-left:14px;text-decoration:none;color:var(--text)}
+nav a:hover{color:var(--accent)}
+nav .danger{color:var(--danger)}
+main{padding:20px}
+h1{margin:0 0 16px}
+.card{background:var(--card);border:1px solid #222;border-radius:10px;padding:16px;margin:0 0 16px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px;border-bottom:1px solid #222}
+.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:#1e1e37;color:var(--text);text-decoration:none;border:1px solid #2a2a50}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.danger{border-color:#512; color:#ffb0bd}
+.input, select{width:100%;padding:10px;border-radius:8px;border:1px solid #2a2a50;background:#12122b;color:var(--text)}
+.form-row{display:grid;grid-template-columns:200px 1fr;gap:10px;align-items:center;margin-bottom:12px}

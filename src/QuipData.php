@@ -4,9 +4,9 @@ class QuipData
 {
     protected string $file;
 
-    public function __construct(string $file = __DIR__ . '/../resources/data/quipvid.json')
+    public function __construct(string $file = null)
     {
-        $this->file = $file;
+        $this->file = $file ?? __DIR__ . '/../resources/data/api.json';
     }
 
     public function all(): array
@@ -25,3 +25,4 @@ class QuipData
         return $json['data'] ?? $json;
     }
 }
+
