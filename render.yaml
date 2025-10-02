@@ -1,8 +1,14 @@
 services:
   - type: web
-    name: quipvid
-    env: bash
-    plan: free
-    buildCommand: |
-      apt-get update && apt-get install -y php php-sqlite3
-    startCommand: php -S 0.0.0.0:$PORT -t public
+    name: your-app-name
+    env: php
+    plan: free # Adjust the plan (e.g., starter, professional) according to your needs.
+    dockerFilePath: ./Dockerfile # Path to your Dockerfile
+    autoDeploy: true # Automatically deploy on every `git push`
+
+    # Add environment variables if needed
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_KEY
+        value: your-app-key-placeholder
