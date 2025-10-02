@@ -7,7 +7,7 @@ define('BASE_PATH', __DIR__);
 
 return [
     'base_url' => '/', // adjust if site lives in subdir
-    'db_path'  => __DIR__ . '/storage/app.sqlite',      // ensure /storage is writable
+    'db_path' => __DIR__ . '/../storage/app.sqlite',
     'session_name' => 'quipvid_session',
     'session_secure' => false, // set true when using HTTPS
     'session_httponly' => true,

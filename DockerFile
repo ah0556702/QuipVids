@@ -1,0 +1,14 @@
+# Use official PHP with Apache
+FROM php:8.2-apache
+
+# Enable SQLite
+RUN docker-php-ext-install pdo_sqlite
+
+# Copy everything into container
+COPY . /var/www/html/
+
+# Set working directory to public (so /public is the web root)
+WORKDIR /var/www/html/public
+
+# Expose Apache default port
+EXPOSE 80
