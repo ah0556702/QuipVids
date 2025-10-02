@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: quipvid
+    env: bash
+    plan: free
+    buildCommand: |
+      apt-get update && apt-get install -y php php-sqlite3
+    startCommand: php -S 0.0.0.0:$PORT -t public

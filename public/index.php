@@ -113,8 +113,13 @@ $baseDomain = "https://quipvid.com"; // prepend to relative URLs
 <body>
 <header>
     <div class="logo">QUIPVID ⚡</div>
+
     <div style="text-align:right; margin-bottom:20px;">
         <a href="/upload.php" class="btn-upload">➕ Submit a Quip</a>
+    </div>
+
+    <div style="text-align:right; margin-bottom:20px;">
+        <a href="/admin/index.php" class="btn-upload">Login</a>
     </div>
 
 
